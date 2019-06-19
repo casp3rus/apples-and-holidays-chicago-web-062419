@@ -65,7 +65,8 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map do |season, holidays|
     holidays.map do |holyday, supply|
       if supply == "BBQ"
-      new_array << holiday
+        new_array << holiday
+      end
     end
   end
   new_array.flatten
